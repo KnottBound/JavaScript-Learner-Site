@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <title>Game #1 - This is a Javascript Game.</title>
+    <link rel="icon" type="image/x-icon" href="site-icon.jpeg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Exo:wght@100;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="gamerstylesheet.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="description" content="This is a basic game in JS.">
+    <meta name="keywords" content="JS, Game, Website">
+    <meta name="author" content="Daniel Knott">
+</head>
+<body>
+<div class="grid-item">
+    <div id="menu">
+        <div id="menu-items">
+            <a href="index.html" class="menu-item">Home</a>
+            <a href="game1.html" class="menu-item">Game #1</a>
+            <a href="game2.html" class="menu-item">Game #2</a>
+            <a href="game3.html" class="menu-item">Game #3</a>
+        </div>
+            <div id="menu-background-pattern"> </div>
+    </div>
+    <div class="grid-articles">
+        <h1>Game #1</h1>
+        <p>This is Game #1.</p>
+    </div>
+    <div id="clickToShow">
+            <form action="/action_page.php">
+                <fieldset class="login-form">
+                    <legend>Sign-In</legend>
+                    <label for="user">Username</label><br>
+                    <input type="text" id="user" name="user"><br>
+                    <label for="pw">Password</label><br>
+                    <input type="password" id="pw" name="pw"><br><br>
+                <button type="button" onclick='submitLogin()'>Login
+                </button>
+
+                </fieldset>
+            </form>
+            <div id="hiddenReponse" style="display:none">
+            </div>
+    </div>
+</div>
+<script src="js/form.js"></script>
+<script src="js/webjs.js"></script>
+</body>
+
+</html

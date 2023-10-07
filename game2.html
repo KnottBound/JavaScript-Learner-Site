@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <title>Game #2 - This is Another Javascript Game.</title>
+    <link rel="icon" type="image/x-icon" href="site-icon.jpeg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Exo:wght@100;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="gamerstylesheet.css">
+    <script src="js/gamemanager.js"></script>
+    <script src="js/player.js"></script>
+    <script src="js/enemy.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="description" content="This is a second basic game in JS.">
+    <meta name="keywords" content="JS, Game 2, Website">
+    <meta name="author" content="Daniel Knott">
+</head>
+<body>
+    <div class="grid-item">
+    <div id="menu">
+        <div id="menu-items">
+            <a href="index.html" class="menu-item">Home</a>
+            <a href="game1.html" class="menu-item">Game #1</a>
+            <a href="game2.html" class="menu-item">Game #2</a>
+            <a href="game3.html" class="menu-item">Game #3</a>
+        </div>
+        <div id="menu-background-pattern"> </div>
+    </div>
+<div class="game-section">
+    <div class="header">
+        <p>Join in the fight against Nautilus</p>
+        <h2>Choose your Missionaut!</h2>
+    </div>
+    
+    <div class="interface">
+        <a href="#" onclick="GameManager.setGameStart('Dwarf')">
+            <img src="img/avatar-player/dwarf.png" alt="dwarf">
+            <div>
+            <h3>Cyber Dwarf</h3>
+            <p> A cyber dwarf has the strength to hit at a very slow pace.</p>
+            </div>
+         </a>
+         
+         <a href="#" onclick="GameManager.setGameStart('Hunter')">
+            <img src="img/avatar-player/hunter.png" alt="hunter">
+
+            <div>
+            <h3>Bounty Hunter</h3>
+            <p> A bounty hunter has the strength to hit at a slow pace and is clumsy.</p>
+            </div>
+         </a>
+         
+         <a href="#" onclick="GameManager.setGameStart('Warrior')">
+            <img src="img/avatar-player/warrior.png" alt="warrior">
+            <div>
+                <h3>Web Warrior</h3>
+                <p> A web warrior has the strength to hit at a faster pace.</p>
+                </div>
+         </a>
+         
+         <a href="#" onclick="GameManager.setGameStart('Wizard')">
+            <img src="img/avatar-player/wizard.png" alt="wizard">
+            <div>
+                <h3>Sci-Wiz</h3>
+                <p> A sci-wiz has very little strength, instead relies on mana and magic to hit at a normal pace.</p>
+                </div>
+         </a>
+    </div>
+
+    <div class="actions">
+
+    </div>
+
+    <div class="arena">
+
+    </div>
+
+    <div class="enemy">
+
+    </div>
+</div>
+</div>
+    <script src="js/webjs.js"></script>
+</body>
+
+</html
