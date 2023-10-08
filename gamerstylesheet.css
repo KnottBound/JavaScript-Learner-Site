@@ -110,3 +110,104 @@ img {
 #clickToShow{
     z-index: 2000;
 }
+
+.card{
+    z-index: 1000;
+    display: grid;
+    min-height: 100vh;
+    place-content: center;
+    perspective: 1000px;
+}
+
+.avery{
+    z-index: 1000;
+    width: 350px;
+
+    aspect-ratio: 9/16;
+    /*background-image: url("img/avery/table.jpg");*/
+    position: relative;
+
+    transition: rotate 700ms ease;
+}
+
+.avery:hover{
+    rotate: x 30deg;
+}
+
+.avery::before{
+    content: '';
+    position: absolute;
+    inset: 0;
+    /*background: lime;*/
+    z-index:100;
+    background-image: radial-gradient(circle 350px, transparent, black);
+    opacity: 0;
+    transition: opacity 700ms ease;
+}
+
+.avery:hover::before{
+    opacity: 1;
+}
+
+.avery::after {
+    content: '';
+    position: absolute;
+    inset: 1.25rem;
+    translate: 0;
+    background: black;
+    filter: blur(1rem);
+    z-index: -1;
+    transition: translate 700ms;
+}
+
+.avery:hover::after{
+    translate: 0 60px;
+}
+
+.bg-image{
+    width: 100%;
+    height: 100%;
+    object-fit:cover;
+    background-position: center;
+}
+
+.logo,
+.front-image {
+    position: absolute;
+}
+
+.logo {
+    z-index: 1200;
+    filter: contrast(1);
+    width: 100%;
+    margin-inline: auto;
+    inset: auto 0 -6rem;
+    transition: transform 700ms ease;
+}
+
+.avery:hover .logo {
+    transform: translateY(-2rem);
+    transform: translateZ(20px);
+    rotate: x 30deg;
+    transition: transform 700ms ease;
+}
+
+.front-image {
+    width: 100%;
+    scale: 1.05;
+    margin-inline: auto;
+    inset: auto 0 3.5rem;
+    opacity: 0;
+    transition: opacity 700ms ease;
+    z-index: 1001;
+    transition: inset;
+}
+
+.avery:hover .front-image{
+    scale: 1.55;
+    opacity: 1;
+    transform-origin: bottom;
+    transition: scale 700ms ease;
+}
+
+
