@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en-US">
 <head>
-    <title>Game #3 - This is a Third Javascript Game.</title>
+    <title>Game #1 - This is a Javascript Game.</title>
     <link rel="icon" type="image/x-icon" href="site-icon.jpeg">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -9,12 +9,12 @@
     <link rel="stylesheet" href="gamerstylesheet.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8">
-    <meta name="description" content="This is an intermediate game in JS.">
-    <meta name="keywords" content="JS, Game 3, Website">
+    <meta name="description" content="This is a basic game in JS.">
+    <meta name="keywords" content="JS, Game, Website">
     <meta name="author" content="Daniel Knott">
 </head>
-<body>
-    <div class="grid-item">
+<body onload="startGame()">
+<div class="grid-item">
     <div id="menu">
         <div id="menu-items">
             <a href="index.html" class="menu-item">Home</a>
@@ -23,27 +23,13 @@
             <a href="game3.html" class="menu-item">Person Cards</a>
             <a href="game4.html" class="menu-item">Movement Game</a>
         </div>
-        <div id="menu-background-pattern"> </div>
+            <div id="menu-background-pattern"> </div>
     </div>
-    <div class="grid-item">
-        <div class="card">
-            <div class="avery">
-                <img class="logo theimg" src="img/avery/danlogo.png">
-                <img class="front-image theimg" src="img/avery/fi.png">
-                <img src="img/avery/bg.jpg" alt="" class="bg-image"> 
-            </div>
-        </div>
-    <div class="card">
-            <div class="avery">
-                <img class="logo theimg" src="img/avery/averylogo.png">
-                <img class="front-image theimg" src="img/avery/front.png">
-                <img src="img/avery/table.jpg" alt="" class="bg-image"> 
-            </div>
-        </div>
-    </div>
-</div>
-</div>
-    <script src="js/webjs.js"></script>
-</body>
+    <div id="game-canvas">
 
-</html
+    </div>
+</div>
+<script src="js/canvas.js"></script>
+<script src="js/webjs.js"></script>
+</body>
+</html>
