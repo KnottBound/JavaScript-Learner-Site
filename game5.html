@@ -1,20 +1,19 @@
 <!DOCTYPE html>
 <html lang="en-US">
 <head>
-    <title>Game #1 - This is a Javascript Game.</title>
+    <title>EleBlob Slots - Slots Game.</title>
     <link rel="icon" type="image/x-icon" href="site-icon.jpeg">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Exo:wght@100;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="gamerstylesheet.css">
-    <script src="js/canvas.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8">
-    <meta name="description" content="This is a basic game in JS.">
-    <meta name="keywords" content="JS, Game, Website">
+    <meta name="description" content="This is a node.js slot game">
+    <meta name="keywords" content="JS, Game, Website, slots">
     <meta name="author" content="Daniel Knott">
 </head>
-<body onload="startGame();">
+<body>
 <div class="grid-item">
     <div id="menu">
         <div id="menu-items">
@@ -27,7 +26,7 @@
         </div>
             <div id="menu-background-pattern"> </div>
     </div>
-    <div id="game-canvas"></div> 
+    <button type="button" id="slots" onclick="game();"></div> 
     </div>
 </div>
 <script src="js/webjs.js"></script>
