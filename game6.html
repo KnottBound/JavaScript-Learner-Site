@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <title>EleBlob Slots - Slots Game.</title>
+    <link rel="icon" type="image/x-icon" href="site-icon.jpeg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Exo:wght@100;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="gamerstylesheet.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="description" content="This is a node.js slot game">
+    <meta name="keywords" content="JS, Game, Website, slots">
+    <meta name="author" content="Daniel Knott">
+</head>
+<body>
+<div class="grid-item">
+    <div id="menu">
+        <div id="menu-items">
+            <a href="index.html" class="menu-item">Home</a>
+            <a href="game1.html" class="menu-item">Form</a>
+            <a href="game2.html" class="menu-item">Battle RP</a>
+            <a href="game3.html" class="menu-item">Person Cards</a>
+            <a href="game4.html" class="menu-item">Movement Game</a>
+            <a href="game5.html" class="menu-item">Slots</a>
+            <a href="game6.html" class="menu-item">Idle Battle</a>
+        </div>
+            <div id="menu-background-pattern"> </div>
+    </div>
+    <div class="grid-item">
+        <div id="hud">
+            <h1>Player:</h1>
+            <p>Health Points: <span id="health">10</span></p>
+            <p>Player Level: <span id="level">1</span></p>
+            <p>Armor Level: <span id="armor">1</span></p>
+            <p>Damage Level: <span id="damage">1</span></p>
+            <br>
+            <h2>Resources:</h2>
+            <br>
+            <p>XP: <span id="xp">10</span></p>
+            <p>Ores: <span id="ore">1</span></p>
+            <p>Food: <span id="food">1</span></p>
+            <p>Smithing: <span id="weaponPoints">1</span></p>
+            <br>
+        <div id="monsterInfo">
+            <h2 >Enemy</h2>
+            <p>Enemy: <span id="monsterName">10</span></p>
+            <p>Health: <span id="monsterHP">1</span></p>
+        </div>
+        </div>
+
+        <div class="actions">
+            <button onclick="clickMonster()">Monster</button>
+            <button onclick="clickFishing()">Fishing</button>
+            <button onclick="clickMining()">Mining</button>
+            <button onclick="clickBlacksmithing()">Blacksmithing</button>
+        </div>
+        <div class="other-actions">
+            <button onclick="clickEat()">Eat Food</button>
+            <button onclick="clickWeapon()">Updgrade Weapon</button>
+            <button onclick="clickArmor()">Upgrade Armor</button>
+        </div>
+    </div>
+    
+    <script src="js/game.js"></script>
+</body>
+<html>

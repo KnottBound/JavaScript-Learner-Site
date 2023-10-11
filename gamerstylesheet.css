@@ -232,4 +232,18 @@ img {
     color:aliceblue;
 }
 
+#hud {
+    z-index: 1200;
+    color:aliceblue;
+}
+
+.actions {
+    z-index: 1200;
+    color:aliceblue;
+}
+
+.other-actions {
+    z-index: 1200;
+    color:aliceblue;
+}
 
