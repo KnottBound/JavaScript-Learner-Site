@@ -27,41 +27,69 @@
         </div>
             <div id="menu-background-pattern"> </div>
     </div>
-    <div class="grid-item">
-        <div id="hud">
-            <h1>Player:</h1>
-            <p>Health Points: <span id="health">10</span></p>
-            <p>Player Level: <span id="level">1</span></p>
-            <p>Armor Level: <span id="armor">1</span></p>
-            <p>Damage Level: <span id="damage">1</span></p>
-            <br>
-            <h2>Resources:</h2>
-            <br>
-            <p>XP: <span id="xp">10</span></p>
-            <p>Ores: <span id="ore">1</span></p>
-            <p>Food: <span id="food">1</span></p>
-            <p>Smithing: <span id="weaponPoints">1</span></p>
-            <br>
-        <div id="monsterInfo">
-            <h2 >Enemy</h2>
-            <p>Enemy: <span id="monsterName">10</span></p>
-            <p>Health: <span id="monsterHP">1</span></p>
+    <div id="gameScene" style="display: none">
+        \<div id="hud">
+            <div id="player">
+                <h1>Player:</h1>
+                <p>Health Points: <span id="health">50</span></p>
+                <p>Player Level: <span id="level">1</span></p>
+                <p>Armor: <span id="armor">1</span></p>
+                <p>Weapon: <span id="weaponStrength">1</span></p>
+                <p>Damage Level: <span id="damage">1</span></p>
+                <p>XP: <span id="xp">10</span></p>
+            </div>
+            <div id="player-resources">
+                <p>_______________________________</p>
+                <h2>Resources:</h2>
+                <p>Ores: <span id="ore">1</span></p>
+                <p><span id="autoMiningIntervalDuration"></span></p>
+                <button onclick="clickMining()">Mine</button>
+                <br>
+                <p>Food: <span id="food">1</span></p>
+                <p><span id="autoFishingIntervalDuration"></span></p>
+                <button onclick="clickFishing()">Food</button>
+                <br>
+                <p>Smithing: <span id="weaponPoints">1</span></p>
+                <p><span id="autoBlacksmithingIntervalDuration"></span></p>
+                <button onclick="clickBlacksmithing()">Smith</button>
+                <br>
+            </div>
         </div>
-        </div>
-
-        <div class="actions">
-            <button onclick="clickMonster()">Monster</button>
-            <button onclick="clickFishing()">Fishing</button>
-            <button onclick="clickMining()">Mining</button>
-            <button onclick="clickBlacksmithing()">Blacksmithing</button>
-        </div>
-        <div class="other-actions">
-            <button onclick="clickEat()">Eat Food</button>
-            <button onclick="clickWeapon()">Updgrade Weapon</button>
-            <button onclick="clickArmor()">Upgrade Armor</button>
+        <div id="hud2">
+            <div id="monsterInfo">
+                <h2>Enemy:</h2>
+                <p>Type: <span id="monsterName">10</span></p>
+                <p>Health: <span id="monsterHP">1</span></p>
+                <button onclick="gameManager.startGame();">Attack</button>
+            </div>
+            <div class="shop">
+                <p>_______________________________</p>
+                <h2>Shop:</h2>
+                <button onclick="purchaseFishingUpgrade()">Upgrade Fishing <span id="fishingUpgradeCost"></span></button>
+                <button onclick="purchaseMiningUpgrade()">Upgrade Mining <span id="miningUpgradeCost"></span></button>
+                <button onclick="purchaseBlacksmithingUpgrade()">Upgrade Blacksmithing <span id="blacksmithingUpgradeCost"></span></button>
+            </div>
+            <div class="other-actions">
+                <p>_______________________________</p>
+                <h2>Upgrade Player:</h2>
+                <button onclick="clickEat()">Eat Food</button>
+                <button onclick="clickWeapon()">Level Up Weapon</button>
+                <button onclick="clickArmor()">Level Up Armor</button>
+            </div>
         </div>
     </div>
-    
+    <div id="startMenu">
+        <div id="startButton">Idle Clicker - Monster Battle</div>
+        <button onclick="gameManager.startGame()">Play Now!</button> 
+    </div>
+
+        <div id="retryScreen" style="display:none;">
+            <h2>Game Over</h2>
+            <p>You Reached Level: <span id="level">1</span></p>
+            <p><span id="monstersKilled">1</span></p>
+        <button onclick="gameManager.retryGame()">Retry</button></div>
+
+ </div>   
     <script src="js/game.js"></script>
 </body>
 <html>

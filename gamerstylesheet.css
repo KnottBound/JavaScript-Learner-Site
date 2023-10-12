@@ -233,17 +233,33 @@ img {
 }
 
 #hud {
+    grid-column-start: 1;
+    margin: auto;
     z-index: 1200;
     color:aliceblue;
+    border: 1px solid white;
 }
 
-.actions {
+#hud2 {
+    grid-column-start: 2;
     z-index: 1200;
     color:aliceblue;
+    border: 1px solid white;
 }
 
-.other-actions {
+#startMenu {
+    margin: auto;
+    padding: 20%;
     z-index: 1200;
     color:aliceblue;
+    border: 1px solid white;
 }
 
+#retryScreen {
+    position: relative;
+    margin: auto;
+    padding: 20%;
+    z-index: 1200;
+    color:aliceblue;
+    border: 1px solid white;
+}
