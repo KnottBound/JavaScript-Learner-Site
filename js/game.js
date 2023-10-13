@@ -129,6 +129,12 @@ let monsters = [
     new Monster('Dragon', 100, 3, 6)
 ];
 
+let monsterMonsters = [
+    new Monster('Demon', 150, 3, 3),
+    new Monster('Vampyre', 170, 3, 4),
+    new Monster('Bandie', 135, 4, 3)
+];
+
 let currentMonster = monsters[0];
 
 
@@ -178,7 +184,7 @@ function clickMonster() {
             xp = 0;
             level++;
             health += 10;  // increase health when leveling up
-            damage++;      // increase damage when leveling up
+            damage++;      // increase damage when leveling up            
         }
     
         // Drop loot (for simplicity, let's assume a 10% chance to drop loot)
@@ -208,6 +214,9 @@ function takePlayerDamage(attackStrength, potentialDamage) {
 //Spawning of Random Monsters
 function spawnNextMonster() {
     //This one spawns them randomly:
+    if (level > 4 && level < 6) {
+        monsters.push(...monsterMonsters);
+    }
     let randomIndex = Math.floor(Math.random() * monsters.length);
     currentMonster = monsters[randomIndex];
     currentMonster.resetHealth(); 
