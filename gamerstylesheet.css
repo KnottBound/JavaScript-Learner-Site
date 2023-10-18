@@ -74,26 +74,46 @@ body {
 }
 
 #menu[data-active-index="0"] > #menu-background-pattern {
-    background-position: 0% -20%;
+    background-position: 0% -10%;
 
 }
 
 #menu[data-active-index="1"] > #menu-background-pattern {
-    background-position: 0% -40%;
+    background-position: 0% -18%;
 
 }
 
 #menu[data-active-index="2"] > #menu-background-pattern {
-    background-position: 0% -60%;
+    background-position: 0% -29%;
 
 }
 
 #menu[data-active-index="3"] > #menu-background-pattern {
-    background-position: 0% -80%;
+    background-position: 0% -41%;
 
 }
 
 #menu[data-active-index="4"] > #menu-background-pattern {
+    background-position: 0% -52%;
+
+}
+
+#menu[data-active-index="5"] > #menu-background-pattern {
+    background-position: 0% -64%;
+
+}
+
+#menu[data-active-index="6"] > #menu-background-pattern {
+    background-position: 0% -76%;
+
+}
+
+#menu[data-active-index="7"] > #menu-background-pattern {
+    background-position: 0% -88%;
+
+}
+
+#menu[data-active-index="8"] > #menu-background-pattern {
     background-position: 0% -100%;
 
 }

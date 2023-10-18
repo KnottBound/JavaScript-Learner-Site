@@ -2,18 +2,18 @@
 <html lang="en-US">
 <head>
     <link rel="stylesheet" href="gamerstylesheet.css">
-    <title>Loot Roller Crate</title>
+    <title>Digital Clock</title>
     <link rel="icon" type="image/x-icon" href="site-icon.jpeg">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Exo:wght@100;400;700&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8">
-    <meta name="description" content="A lot rolling game">
-    <meta name="keywords" content="JS, Game, Website, slots">
+    <meta name="description" content="Digital Live Clock">
+    <meta name="keywords" content="JS, Game, Clock, Website, slots">
     <meta name="author" content="Daniel Knott">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <script src="js/crateopening.js"></script>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 <div class="grid-item">
@@ -31,21 +31,25 @@
         </div>
             <div id="menu-background-pattern"> </div>
     </div>
-    <div class="raffle-roller">
-        <div class="raffle-roller-holder">
-            <div class="raffle-roller-container" style="margin-left: 0px;">
-            </div>
+    <h2>Digital Clock</h2>
+    <div class="clock">
+        <div>
+            <span id="hour">00</span>
+            <span class="text">Hours</span>
         </div>
-    </div>
-    <div class="crate-buttons">
-        <span style="font-size: 25px;">You winning is <span style="color: green;" id="rolled">rolling</span>
-            <br>
-            <button onclick="generate();">go</button>
-            <button onclick="window.location='';">reset</button>
+        <div>
+            <span id="minutes">00</span>
+            <span class="text">Minutes</span>
         </div>
-    <br>
-    <div class="inventory"></div>
- </div>
-
+        <div>
+            <span id="seconds">00</span>
+            <span class="text">Seconds</span>
+        </div>
+        <div>
+            <span id="ampm">AM</span>
+        </div>
+    </div>    
+<script src="js/game8.js"></script>
+<script src="js/webjs.js"></script>
  </body>
- </html>   
+ </html>  
