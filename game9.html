@@ -10,9 +10,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8">
     <meta name="description" content="A lot rolling game">
-    <meta name="keywords" content="JS, Game, Website, slots">
+    <meta name="keywords" content="JS, Game, Website">
     <meta name="author" content="Daniel Knott">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
 </head>
 <body>
 <div class="grid-item">
@@ -31,6 +32,19 @@
         </div>
             <div id="menu-background-pattern"> </div>
     </div>
+    <div class="container">
+        <h2 class="word-count-headers">Freelance Word Count</h2>
+        <textarea id="textarea" class="textarea" placeholder="Please paste text here..."></textarea>
+        <div class="counter-container"></div>
+        <p class="word-count-headers">Total Characters:
+            <span class="total-counter" id="total-counter">30</span>
+        </p>
+        <div class="counter-container"></div>
+        <p class="word-count-headers">Invoice Amount:
+            <span class="invoice-counter" id="invoice-counter">$30</span>
+        </p>
+    </div>
 </div>
+<script src="js/textcounter.js"></script>
 </body>
 </html>
