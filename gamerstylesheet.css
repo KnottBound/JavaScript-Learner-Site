@@ -426,3 +426,29 @@ img {
 .word-count-headers {
     color: white;
 }
+
+.counter-container{
+    margin: 0;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.heading {
+    color: white;
+    text-align: center;
+    padding-top: 10px;
+    font-size: 35px;
+}
+
+.info-text {
+    text-align: center;
+    color: #101010;
+    font: 18px;
+}
+
+.app {
+    display: grid;
+    grid-template-columns: repeat(auto-full, 300px);
+    gap: 40px;
+    justify-content: center;
+    padding: 50px;
+}
