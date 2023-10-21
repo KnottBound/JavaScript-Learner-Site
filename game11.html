@@ -32,17 +32,12 @@
             <a href="game10.html" class="menu-item">Notes</a>
             <a href="game11.html" class="menu-item">Google API Search</a>
         </div>
-            <div id="menu-background-pattern"> </div>
     </div>
-    <div class="note-container">
-        <h1 class="heading"> Note App</h1>
-        <p class="info-text"> Double click on note to remove it.</p>
-        <div class="app" id="app">
-            <!--<textarea col="30" rows="10" class="note" placeholder="Empty Note"></textarea>-->
-            <button class="btnnote" id="btnnote">+</button>
-        </div>
-
-    </div>
-<script src="js/note.js"></script>
+    <h1>Create and Use an API</h1>
+    <input type="text" id="searchQueryInput" placeholder="Enter search query">
+    <button id="getDataButton">Get Data</button>
+    <div id="dataContainer"></div>
+    <script src="fetch.js"></script>
+</div>
 </body>
 </html>
