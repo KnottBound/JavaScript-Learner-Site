@@ -499,3 +499,7 @@ img {
     color: #101010;
     transition: all 300ms ease;
 }
+
+.search-title {
+    color: white;
+}
